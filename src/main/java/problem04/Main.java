@@ -4,6 +4,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 
+		
 		long start = System.currentTimeMillis(); //시작하는 시점 계산
 		 
 		/*
@@ -13,6 +14,11 @@ public class Main {
 		long end = System.currentTimeMillis(); //프로그램이 끝나는 시점 계산
 
 
+	}
+	
+	public boolean checkRock() {
+		
+		return false;
 	}
 
 }

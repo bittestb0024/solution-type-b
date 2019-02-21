@@ -10,22 +10,31 @@ public class Money {
 	}
 
 	public Money add(Money money) {
-		this.amount += money.amount;
-		return new Money(this.amount);
+		int num = this.amount + money.amount;
+		return new Money(num);
 	}
 
 	public Money minus(Money money) {
-		this.amount -= money.amount;
-		return new Money(this.amount);
+		int num = this.amount - money.amount;
+		return new  Money(num);
 	}
 
 	public Money multiply(Money money) {
-		this.amount *= money.amount;
-		return new Money(this.amount);
+		int num = this.amount * money.amount;
+		return new  Money(num);
 	}
 
 	public Money devide(Money money) {
-		this.amount /= money.amount;
-		return new Money(this.amount);
+		int num = this.amount / money.amount;
+		return new Money(num);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Money money = (Money) obj;
+		if(money.amount == this.amount){
+			return true;
+		}
+		return false;
 	}
 }
